@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmonious Flow Tai Chi - Find Your Balance</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styling to apply Inter font globally and smooth scrolling */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #f8fafc; /* Light gray background */
+        }
+        /* Custom gradient for CTA button */
+        .cta-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px 0 rgba(14, 165, 233, 0.4);
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px 0 rgba(14, 165, 233, 0.6);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-white bg-opacity-95 shadow-lg backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo/Brand -->
+                <a href="#home" class="text-2xl font-extrabold text-teal-600 tracking-wider">
+                    Harmonious Flow <span class="text-gray-500 font-light">Tai Chi</span>
+                </a>
+                
+                <!-- Desktop Links -->
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="#benefits" class="text-gray-600 hover:text-teal-600 transition duration-150">Benefits</a>
+                    <a href="#schedule" class="text-gray-600 hover:text-teal-600 transition duration-150">Schedule</a>
+                    <a href="#instructor" class="text-gray-600 hover:text-teal-600 transition duration-150">Instructor</a>
+                    <a href="#contact" class="text-gray-600 hover:text-teal-600 transition duration-150">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button - Minimal for a one-page site -->
+                <a href="#contact" class="md:hidden text-teal-600 hover:text-teal-800 font-medium transition duration-150">
+                    Enroll
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <header id="home" class="relative overflow-hidden pt-16 pb-24 bg-gray-900">
+        <!-- Background Image/Overlay -->
+        <div class="absolute inset-0 opacity-40" style="background-image: url('https://placehold.co/1920x1080/000/fff?text=Tai+Chi+Class'); background-size: cover; background-position: center;"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-4">
+                Find Your Center. <span class="block text-teal-400">Master Your Flow.</span>
+            </h1>
+            <p class="text-xl md:text-2xl font-light max-w-3xl mx-auto mb-10">
+                Authentic Yang-Style Tai Chi and QiGong classes in [Your City]. Improve balance, reduce stress, and cultivate vital energy.
+            </p>
+            
+            <a href="#schedule" class="cta-button inline-block px-12 py-4 text-lg font-bold rounded-full bg-sky-500 hover:bg-sky-600 text-white uppercase shadow-xl transition transform hover:scale-105">
+                View Class Schedule
+            </a>
+            <p class="mt-4 text-sm font-light text-gray-300">New students get a FREE introductory session!</p>
+        </div>
+    </header>
+
+    <!-- 2. Benefits Section -->
+    <section id="benefits" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-4 text-gray-800">Why Practice Tai Chi?</h2>
+            <p class="text-center text-xl text-gray-600 mb-16 max-w-2xl mx-auto">
+                Discover the transformative power of "moving meditation."
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Benefit Card 1 -->
+                <div class="text-center p-8 bg-gray-50 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-teal-500">
+                    <div class="text-5xl text-teal-500 mb-4">
+                        <!-- Balance Icon -->
+                        <span role="img" aria-label="Balance">⚖️</span>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">Enhanced Balance & Stability</h3>
+                    <p class="text-gray-600">
+                        Strengthen your core and leg muscles, significantly reducing the risk of falls and improving overall body control.
+                    </p>
+                </div>
+
+                <!-- Benefit Card 2 -->
+                <div class="text-center p-8 bg-gray-50 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-teal-500">
+                    <div class="text-5xl text-teal-500 mb-4">
+                        <!-- Stress Relief Icon -->
+                        <span role="img" aria-label="Relaxation">🧘</span>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">Profound Stress Reduction</h3>
+                    <p class="text-gray-600">
+                        The meditative, continuous movements calm the nervous system, helping you manage anxiety and achieve mental clarity.
+                    </p>
+                </div>
+
+                <!-- Benefit Card 3 -->
+                <div class="text-center p-8 bg-gray-50 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-teal-500">
+                    <div class="text-5xl text-teal-500 mb-4">
+                        <!-- Energy Icon -->
+                        <span role="img" aria-label="Energy">⚡</span>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">Cultivate Vital Energy (Qi)</h3>
+                    <p class="text-gray-600">
+                        Learn breathing techniques and movements to boost your body's natural energy flow, leading to improved vitality and focus.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Schedule & Location Section -->
+    <section id="schedule" class="py-20 bg-teal-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Class Schedule & Fees</h2>
+
+            <div class="lg:flex lg:space-x-12">
+                <!-- Schedule Table -->
+                <div class="lg:w-2/3 bg-white p-6 md:p-10 rounded-xl shadow-2xl">
+                    <h3 class="text-3xl font-semibold text-gray-800 mb-6 border-b pb-2">Weekly Classes</h3>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <thead class="bg-teal-100">
+                                <tr>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider rounded-tl-lg">Class</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">Day</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">Time</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider rounded-tr-lg">Focus</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-teal-600">Beginner's Form</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Mon & Wed</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">6:00 PM - 7:00 PM</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Yang 24-Form basics</td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-teal-600">Intermediate Flow</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Tue & Thu</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">7:15 PM - 8:15 PM</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Long Form & Applications</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-teal-600">Morning QiGong</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Saturday</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">9:00 AM - 10:00 AM</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Breathing & Energy Work</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Pricing and Location Info -->
+                <div class="lg:w-1/3 mt-10 lg:mt-0 space-y-8">
+                    <!-- Pricing Card -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-teal-200">
+                        <h3 class="text-2xl font-bold text-teal-600 mb-4">Pricing Options</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex justify-between items-center border-b pb-2">
+                                <span class="font-medium">Monthly Membership</span>
+                                <span class="text-lg font-bold text-teal-800">$99 / month</span>
+                            </li>
+                            <li class="flex justify-between items-center border-b pb-2">
+                                <span class="font-medium">QiGong Only</span>
+                                <span class="text-lg font-bold text-teal-800">$50 / month</span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <span class="font-medium">Drop-in Class</span>
+                                <span class="text-lg font-bold text-teal-800">$25</span>
+                            </li>
+                        </ul>
+                        <p class="mt-4 text-sm text-gray-500">Your first class is always free to try!</p>
+                    </div>
+
+                    <!-- Location Card -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-teal-200">
+                        <h3 class="text-2xl font-bold text-teal-600 mb-4">Studio Location</h3>
+                        <p class="text-gray-700">The Harmony Center</p>
+                        <p class="text-gray-500 text-sm">123 Tranquility Lane, Ste 200</p>
+                        <p class="text-gray-500 text-sm">[City], [State] 12345</p>
+                        <a href="https://maps.app.goo.gl/" target="_blank" class="mt-4 inline-block text-sm text-sky-600 hover:text-sky-800 font-medium">Get Directions (Opens Map) &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Instructor & Testimonials Section -->
+    <section id="instructor" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">Meet Your Instructor & Community</h2>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                <!-- Instructor Bio -->
+                <div class="lg:w-1/3 p-6 bg-gray-50 rounded-xl shadow-lg flex flex-col items-center text-center border-b-4 border-sky-500">
+                    <img class="w-32 h-32 rounded-full object-cover mb-4 ring-4 ring-sky-500/50" 
+                         src="https://placehold.co/128x128/ccc/333?text=Sifu+P" 
+                         alt="Instructor Profile Picture"
+                         onerror="this.onerror=null;this.src='https://placehold.co/128x128/ccc/333?text=Instructor';">
+                    
+                    <h3 class="text-2xl font-bold text-gray-800">Sifu Peter Chen</h3>
+                    <p class="text-teal-600 font-medium mb-4">Master of the Internal Arts</p>
+                    <p class="text-gray-600 text-left">
+                        Sifu Peter has been a devoted practitioner of Tai Chi Chuan for over 25 years. He specializes in the gentle, yet powerful, **Yang Family Style**. His teaching philosophy focuses on making the complex art accessible to all ages, emphasizing proper structure and meditative focus over strenuous effort.
+                    </p>
+                    <p class="text-gray-600 text-left mt-3 font-semibold">
+                        "The greatest journey is the one back to yourself."
+                    </p>
+                </div>
+
+                <!-- Testimonials -->
+                <div class="lg:w-2/3 space-y-8">
+                    <h3 class="text-3xl font-semibold text-gray-800 border-b pb-2 mb-6">Student Stories</h3>
+                    
+                    <!-- Testimonial 1 -->
+                    <blockquote class="bg-teal-50 p-6 rounded-xl shadow-md border-l-4 border-teal-500">
+                        <p class="text-lg italic text-gray-700">
+                            "Since starting Tai Chi, my chronic knee pain has dramatically improved, and I feel a profound sense of calm that lasts all day. Sifu Peter is an incredibly patient and knowledgeable guide."
+                        </p>
+                        <footer class="mt-4 font-bold text-teal-600">— Eleanor V., Retired Teacher</footer>
+                    </blockquote>
+
+                    <!-- Testimonial 2 -->
+                    <blockquote class="bg-teal-50 p-6 rounded-xl shadow-md border-l-4 border-teal-500">
+                        <p class="text-lg italic text-gray-700">
+                            "I came for the exercise, but I stayed for the peace. The Saturday QiGong class is the best way to start the weekend. Highly recommend Harmonious Flow!"
+                        </p>
+                        <footer class="mt-4 font-bold text-teal-600">— Michael B., Software Engineer</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900">
+        <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold text-white mb-4">Start Your Free Introductory Class</h2>
+            <p class="text-xl text-gray-300 mb-10">
+                Have questions? Ready to reserve your spot? Fill out the form below.
+            </p>
+            
+            <!-- Simple Contact Form -->
+            <form action="#" method="POST" class="bg-white p-8 rounded-xl shadow-2xl">
+                <div class="mb-4">
+                    <input type="text" id="name" name="name" placeholder="Your Name" 
+                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-teal-500 focus:border-teal-500" required>
+                </div>
+                <div class="mb-4">
+                    <input type="email" id="email" name="email" placeholder="Your Email Address" 
+                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-teal-500 focus:border-teal-500" required>
+                </div>
+                <div class="mb-6">
+                    <textarea id="message" name="message" rows="4" placeholder="How can we help you? (e.g., I'd like to try a free class!)" 
+                              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-teal-500 focus:border-teal-500" required></textarea>
+                </div>
+                <button type="submit" class="cta-button w-full px-8 py-3 text-lg font-bold rounded-lg bg-teal-600 hover:bg-teal-700 text-white uppercase transition transform hover:scale-[1.01]">
+                    Send Message & Book Trial
+                </button>
+            </form>
+            
+            <p class="mt-8 text-sm text-gray-400">
+                You can also call us directly at (555) 123-4567
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-800 text-center text-gray-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="mb-4 text-sm">&copy; 2024 Harmonious Flow Tai Chi. All Rights Reserved.</p>
+            
+            <!-- Social Media Icons (using simple text placeholders) -->
+            <div class="flex justify-center space-x-6 text-xl">
+                <a href="#" class="hover:text-teal-400 transition duration-150">
+                    <span role="img" aria-label="Facebook">📘</span>
+                </a>
+                <a href="#" class="hover:text-teal-400 transition duration-150">
+                    <span role="img" aria-label="Instagram">📸</span>
+                </a>
+                <a href="#" class="hover:text-teal-400 transition duration-150">
+                    <span role="img" aria-label="YouTube">▶️</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
